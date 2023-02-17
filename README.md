@@ -15,6 +15,6 @@ https://www.saucedemo.com/ - специальный сайт для тренир
 # 
 **Процесс запуска и прохождение теста.**
 
-https://user-images.githubusercontent.com/116362682/219495115-0e1f3247-1fc7-405a-9c47-0b04c0c14a8f.mp4
+https://user-images.githubusercontent.com/116362682/219573866-f6c4c27b-f1a4-4e28-96c6-9f915e2c3c3d.mp4
 
 #
