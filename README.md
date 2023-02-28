@@ -32,20 +32,5 @@ https://user-images.githubusercontent.com/116362682/219573866-f6c4c27b-f1a4-4e28
 https://user-images.githubusercontent.com/116362682/221432598-4ff3a128-5a05-41f4-93a1-47df1ceb8414.mp4
 
 
-## Checking Different Users - Техническое задание 
-
-1. Залогиниться под всеми 4 пользователями.
-
-+ standard_user - Стандартный пользователь сайта ;
-+ locked_out_user - Заблокированный пользователь сайта. При попытке авторизоваться, будет выдаваться ошибка ;
-+ problem_user - Картинки товаров не соответствуют действительности ;
-+ performance_glitch_user - Пользователь с долгой прогрузкой сайта.
-
-#
-**Процесс запуска и прохождения теста**
-
-https://user-images.githubusercontent.com/116362682/221432999-a10c83dc-06e6-436e-893f-24e0170f7dee.mp4
-
-
 
 
