@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/116362682/219573866-f6c4c27b-f1a4-4e28
 https://user-images.githubusercontent.com/116362682/221432598-4ff3a128-5a05-41f4-93a1-47df1ceb8414.mp4
 
 
-## Date time = Техническое задание 
+## Date time - Техническое задание 
 
 1.Открыть календарь на сайте [demoqa.com](https://demoqa.com/).
 
