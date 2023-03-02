@@ -6,7 +6,7 @@
 
 Полноценный проект по автоматизированному тестированию.
 
-**Первый тест - покупка смартфона**
+**Тест - покупка смартфона**
 
 [![screenshotsscreenshot 2023 02 28 22 27 15](https://user-images.githubusercontent.com/116362682/221997835-c46752f4-672f-4228-a042-13276d8df132.png)](https://youtu.be/V9RcxW7rJAM)
 
@@ -14,7 +14,7 @@
 
 
 
-**Второй тест - сравнение двух лептопов одной фирмы**
+**Тест - сравнение двух лептопов одной фирмы**
 
 [![screenshotsscreenshot 2023 02 28 22 26 09](https://user-images.githubusercontent.com/116362682/221998033-a31ccec0-f711-4728-94dc-87c43db4e0d4.png)](https://youtu.be/nXdNEScFCBY)
 
