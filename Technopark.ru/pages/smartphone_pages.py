@@ -7,6 +7,7 @@ from base.base_class import Base
 
 
 class Smartphone_page(Base):
+
     url = 'https://www.technopark.ru/'
 
     def __init__(self, driver):
@@ -15,9 +16,6 @@ class Smartphone_page(Base):
 
     # Locators
 
-    catalog = "//button[@class='header-catalog-button header-catalog__btn']"
-    catalog_smartphone = "//a[@data-id='6209']"
-    smartphone = "//a[@to='/smartfony/']"
     filter_only_available = "//*[@id='__layout']/div/div[2]/div/div[1]/div/aside/div/div/div/div[2]/div[2]/div[2]/div/div[1]/label/span[2]"  # Только в наличие
     filter_from = "//*[@id='__layout']/div/div[2]/div/div[1]/div/aside/div/div/div/div[2]/div[4]/div[1]/div[2]/div[1]/input"  # Цена от
     filter_before = "//*[@id='__layout']/div/div[2]/div/div[1]/div/aside/div/div/div/div[2]/div[4]/div[1]/div[2]/div[2]/input"  # Цена до
@@ -28,20 +26,7 @@ class Smartphone_page(Base):
     button_items = "//*[@id='__layout']/div/div[2]/div/div[1]/div/aside/div/div/div/div[1]/button[1]"  # Кнопка показать товар
     phone = "//a[@title='Смартфон Samsung Galaxy M53 5G 256 ГБ зелёный']"  # Выбор самого телефона
 
-    button_cart = "//button[@data-test-id='add-to-cart-button']"
-    button_shopping_cart = "//a[@data-test-id='upsale-to-cart']"
-    phone_code = "//a[@class='checkout-cart-product-item__title']"
-
     # Getters
-
-    def get_catalog(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.catalog)))
-
-    def get_catalog_smartphone(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.catalog_smartphone)))
-
-    def get_smartphone(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.smartphone)))
 
     def get_filter_only_available(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.filter_only_available)))
@@ -70,30 +55,9 @@ class Smartphone_page(Base):
     def get_phone(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.phone)))
 
-    def get_button_cart(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.button_cart)))
-
-    def get_shopping_cart(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.button_shopping_cart)))
-
-    def get_phone_code(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.phone_code)))
-
     # Actions
 
-    def click_catalog(self):
-        self.get_catalog().click()
-        print('Click to Catalog')
-
-    def click_catalog_smartphone(self):
-        self.get_catalog_smartphone().click()
-        print('Click to Catalog again')
-
-    def click_smartphone(self):
-        self.get_smartphone().click()
-        print('Open catalog with smartphone')
-
-    def click_filter_only_availableg(self):
+    def click_filter_only_available(self):
         self.get_filter_only_available().click()
         print('Click to available only filter')
 
@@ -145,23 +109,10 @@ class Smartphone_page(Base):
         self.get_phone().click()
         print('Choosing smartphone')
 
-    def click_button_cart(self):
-        self.get_button_cart().click()
-        print('Click to button cart')
-
-    def click_shopping_cart(self):
-        self.get_shopping_cart().click()
-        print('Go to cart')
-
     # Methods
 
-    def choosing_smartphone(self):
-        self.driver.get(self.url)
-        self.driver.maximize_window()
-        self.click_catalog()
-        self.click_catalog_smartphone()
-        self.click_smartphone()
-        self.click_filter_only_availableg()
+    def choosing_smartphone_1(self):
+        self.click_filter_only_available()
         self.driver.execute_script('window.scrollTo(0,700)')
         self.click_filter_from()
         self.clear_filet_from()
@@ -175,7 +126,3 @@ class Smartphone_page(Base):
         self.click_filter_battery_box()
         self.click_button_items()
         self.click_phone()
-        self.click_button_cart()
-        self.click_shopping_cart()
-        self.assert_word(self.get_phone_code().text, 'Samsung Galaxy M53 5G 256 ГБ зелёный')
-        self.get_screenshot()
